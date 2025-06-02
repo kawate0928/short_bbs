@@ -12,6 +12,7 @@
         <p>コメント：<br>
         <textarea name="comment" rows="4" cols="40" required></textarea></p>
         <p><button type="submit">投稿する</button></p>
+        変更したテスト！！
     </form>
     <p><a href="view.php">▶ 投稿一覧を見る</a></p>
 </body>
