@@ -1,5 +1,4 @@
 <?php
-    echo 'コミットテスト;'
     $host = 'localhost';
     $dbname = 'bbs';          
     $user = 'root';          
