@@ -21,8 +21,8 @@ try {
     $sql = "INSERT INTO posts (name, comment) VALUES (:name, :comment)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
-        ':name' => '山田太郎',      // 名前のデータ
-        ':comment' => 'こんにちは！'  // コメントのデータ
+        ':name' => '山田太郎',      // 名前のデータを設定
+        ':comment' => 'こんにちは！'  // コメントのデータを設定
     ]);
     echo "データ挿入成功<br>";
 
@@ -44,8 +44,8 @@ try {
     $sql = "UPDATE posts SET comment = :comment WHERE id = :id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
-        ':comment' => '更新されたコメントです', // 更新後のコメント
-        ':id' => 1                                // 更新するレコードのID
+        ':comment' => '更新されたコメントです', // 更新後のコメントを設定
+        ':id' => 1                                // 更新するレコードのIDを定める
     ]);
     echo "データ更新成功<br>";
 
@@ -55,7 +55,7 @@ try {
     $sql = "DELETE FROM posts WHERE id = :id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([
-        ':id' => 2 // 削除したいレコードのID
+        ':id' => 2 // 削除したいレコードのIDを定める
     ]);
     echo "データ削除成功<br>";
 
