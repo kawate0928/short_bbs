@@ -1,3 +1,8 @@
+<?php
+    if(isset($_SESSION['name']) && isset($_SESSION['pass'])){
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
