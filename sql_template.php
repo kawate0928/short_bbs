@@ -59,6 +59,14 @@ try {
     ]);
     echo "データ削除成功<br>";
 
+    if (isset($_SESSION['user_id'])) {
+        echo "ログイン中 ユーザーID: " . $_SESSION['user_id'] . "<br>";
+        
+    }else{
+        header("Location: login.php"); // ログイン後に保護ページへ
+        exit();
+    }
+
 } catch (PDOException $e) {
     // エラーが発生した場合の処理
     echo "接続失敗: " . $e->getMessage();
